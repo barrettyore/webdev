@@ -1,0 +1,86 @@
+body{
+    background-color: darkslategrey;
+}
+
+    #italy {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+    }
+        #italy-green {
+            background-color: green;
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+        #italy-white {
+            background-color: white;
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+        #italy-red {
+            background-color: red;
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+    
+    #japan {
+        display: grid;
+        grid-template-columns:  200px 200px 200px;
+        grid-template-rows:  133px 133px 133px;
+        background-color: white;
+        height: 400px;
+        width: 600px;
+    }
+
+
+        #japan-red{
+            background-color: red;
+            grid-column: 2/2;
+            grid-row: 2/2;
+            border-radius: 50%;
+        }
+    
+    #germany {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 133px 133px 133px;
+    }
+
+        #germany-black {
+            background-color: black;
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+
+        #germany-red {
+            background-color: red;
+            grid-column: 1/4;
+            grid-row: 2/3;
+        }
+
+        #germany-yellow {
+            background-color: yellow;
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+
+    #belgium {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+    }
+        #belgium-black {
+            background-color: black;
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+        #belgium-red {
+            background-color: red;
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+        #belgium-yellow {
+            background-color: yellow;
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
