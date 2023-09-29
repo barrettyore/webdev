@@ -84,3 +84,85 @@ body{
             grid-column: 3/4;
             grid-row: 1/3;
         }
+
+    #thailand{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 600px ;
+        grid-template-rows: 66px 66px 66px 66px 66px 66px ;
+    }
+        #thailand-red-1{
+            background-color: red;
+            grid-row: 1/2;
+
+        }
+
+        #thailand-white-1{
+            background-color: white;
+            grid-row: 2/3;
+        }
+
+        #thailand-blue{
+            background-color: blue;
+            grid-row: 3/5;
+        }
+        
+        #thailand-white-2{
+            background-color: white;
+            grid-row: 5/6;
+        }
+
+        #thailand-red-2{
+            background-color: red;
+            grid-row: 6/7;
+        }
+
+#swiss{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+#swiss-red-1{
+    background-color: red;
+    grid-column: 1 / 2;
+    grid-row: 1/3;
+}
+
+#swiss-red-2-t{
+
+}
+#swiss-white-1{
+
+}
+
+#swiss-red-2-b{
+
+}
+
+#swiss-red-3-t{
+
+}
+
+#swiss-white-2{
+
+}
+#swiss-red-3-b{
+
+}
+#swiss-red-4-t{
+
+}
+#swiss-white-3{
+
+}
+
+#swiss-red-4-b{
+
+}
+
+#swiss-red-5{
+
+}
+/* 8tall 5 wide */
