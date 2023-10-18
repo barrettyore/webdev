@@ -1,5 +1,6 @@
+/* div control */
 #anim1{
-    height: 20vh;
+    height: 200px;
     width: 200px;
     animation-name: color-swap;
     animation-duration: 1s;
@@ -49,18 +50,7 @@
     animation: shack 1s linear infinite;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
+/* animation */
 @keyframes color-swap {
     0% {
         background-color: red;
@@ -162,3 +152,213 @@
         transform: rotateZ(0deg);
     }
 }
+/* veiw widths */
+@media screen and (max-width: 600px) {
+    
+h1{
+    font-size: small;
+}
+#anim1{
+    display: flex;
+    height: 10vh;
+    width: 10vh;
+}
+#anim2{
+    display: flex;
+    height: 10vh;
+    width: 10vh;
+}
+#anim3{
+    display: flex;
+    height: 10vh;
+    width: 10vh;
+}
+#anim4{
+    height: 10vh;
+    width: 10vh;
+    
+    display: grid;
+    grid-template-rows: 10vh;
+    grid-template-columns: 10vh 10vh 10vh;
+}
+
+#mover {
+    background-color: black;
+    animation: move 1s linear infinite;
+
+}
+
+#anim5{
+    display: flex;
+    height: 10vh;
+    width: 10vh;
+}
+}
+@media screen and (min-width: 600px) {
+    
+    h1{
+        font-size: medium;
+    }
+    #anim1{
+        display: flex;
+        height: 15vh;
+        width: 15vh;
+    }
+    #anim2{
+        display: flex;
+        height: 15vh;
+        width: 15vh;
+    }
+    #anim3{
+        display: flex;
+        height: 15vh;
+        width: 15vh;
+    }
+    #anim4{
+        height: 15vh;
+        width: 15vh;
+        
+        display: grid;
+        grid-template-rows: 15vh;
+        grid-template-columns: 15vh 15vh 15vh;
+    }
+    
+    #mover {
+        background-color: black;
+        animation: move 1s linear infinite;
+    
+    }
+    
+    #anim5{
+        display: flex;
+        height: 15vh;
+        width: 15vh;
+    }
+    }
+
+    @media screen and (min-width: 768px) {
+    
+        h1{
+            font-size: large;
+        }
+        #anim1{
+            display: flex;
+            height: 25vh;
+            width: 25vh;
+        }
+        #anim2{
+            display: flex;
+            height: 25vh;
+            width: 25vh;
+        }
+        #anim3{
+            display: flex;
+            height: 25vh;
+            width: 25vh;
+        }
+        #anim4{
+            height: 25vh;
+            width: 25vh;
+            
+            display: grid;
+            grid-template-rows: 25vh;
+            grid-template-columns: 25vh 25vh 25vh;
+        }
+        
+        #mover {
+            background-color: black;
+            animation: move 1s linear infinite;
+        
+        }
+        
+        #anim5{
+            display: flex;
+            height: 25vh;
+            width: 25vh;
+        }
+        }
+
+        @media screen and (min-width: 992px) {
+    
+            h1{
+                font-size: large;
+            }
+            #anim1{
+                display: flex;
+                height: 30vh;
+                width: 30vh;
+            }
+            #anim2{
+                display: flex;
+                height: 30vh;
+                width: 30vh;
+            }
+            #anim3{
+                display: flex;
+                height: 30vh;
+                width: 30vh;
+            }
+            #anim4{
+                height: 30vh;
+                width: 30vh;
+                
+                display: grid;
+                grid-template-rows: 30vh;
+                grid-template-columns: 30vh 30vh 30vh;
+            }
+            
+            #mover {
+                background-color: black;
+                animation: move 1s linear infinite;
+            
+            }
+            
+            #anim5{
+                display: flex;
+                height: 30vh;
+                width: 30vh;
+            }
+            }
+
+        
+            @media screen and (min-width: 1200) {
+        
+                h1{
+                    font-size: x-large;
+                }
+                #anim1{
+                    display: flex;
+                    height: 35vh;
+                    width: 35vh;
+                }
+                #anim2{
+                    display: flex;
+                    height: 35vh;
+                    width: 35vh;
+                }
+                #anim3{
+                    display: flex;
+                    height: 35vh;
+                    width: 35vh;
+                }
+                #anim4{
+                    height: 35vh;
+                    width: 35vh;
+                    
+                    display: grid;
+                    grid-template-rows: 35vh;
+                    grid-template-columns: 35vh 35vh 35vh;
+                }
+                
+                #mover {
+                    background-color: black;
+                    animation: move 1s linear infinite;
+                
+                }
+                
+                #anim5{
+                    display: flex;
+                    height: 35vh;
+                    width: 35vh;
+                }
+                }
