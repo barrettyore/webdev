@@ -1,0 +1,25 @@
+body {
+    color: white;
+    background-color: black;
+}
+/* APPLIES TO ALL OF TYPE */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* APPLIES TO WHAT YOU SPECIFY */
+#first {
+    color: red;
+    font-style: italic;
+    font-weight:  900;
+}
+/* APPLIES TO ONLY ONE TAG THAT YOU SPECIFY */
+@media  screen and (min-wid: 700px) 
+{
+ .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }   
+}
