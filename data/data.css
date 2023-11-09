@@ -1,0 +1,45 @@
+/* txt */
+#var1 {
+    color: purple;
+}
+#var2 {
+    color: green;
+}
+#var3 {
+    color: orange;
+}
+/* nums */
+#num1 {
+    font-style: italic;
+}
+#num2 {
+    font-style: italic;
+}
+#num3 {
+    font-style: italic;
+}
+/* bools */
+#bool1 {
+    background-color: purple;
+}
+#bool2 {
+    background-color: green;
+}
+#bool3 {
+    background-color: orange;
+}
+/* arrays */
+#array1 {
+    float:left;
+    width:5%
+}
+/* obj */
+#obj1 {
+    font-size: xx-large;
+}
+#obj2 {
+    font-size: xx-large;
+}
+#obj3 {
+    font-size: xx-large;
+}
