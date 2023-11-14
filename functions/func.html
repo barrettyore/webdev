@@ -9,14 +9,33 @@
 <body>
     <div id="here"></div>
     <div>
-        <form>
-            <input type="number" id = "children" placeholder="enter a number">
-            <input type="text" id = "name" placeholder="enter name">
-            <input type="text" id="location" placeholder="enter location">
-            <input type="text" id="job" placeholder="enter job">
-            <button onclick="tellFortune()"> tell my fortune</button>
-        </form>
-        <p id = "fortune"></p>
+        <input type="number" id = "children" placeholder="enter a number">
+        <input type="text" id = "partner" placeholder="enter name">
+        <!-- <input type="text" id="location" placeholder="enter location"> -->
+        <input type="text" id="job" placeholder="enter job">
+        <button onclick="tellFortune()"> tell my fortune</button>
+        <p id="fortune"></p>
+    </div>
+    <div>
+        <input type="number" id = "dog" placeholder="enter a number">
+        <button onclick="dog()"> calculate dog age</button>
+        <p id="age"></p>
+    </div>
+    <div>
+        <input type="number" id="current-age" placeholder="enter you age">
+        <input type="number" id="amount-per-day" placeholder="enter amount-per-day">
+        <button onclick="calculateSupply()">calculate supply</button>
+        <p id="supply"></p>
+    </div>
+    <div>
+        <input type="number" id="radius" placeholder="enter radius">
+        <button onclick="calCircumfrence()">Calculatecircumfrence</button>
+        <p id="circumfrence"></p>
+    </div>
+    <div>
+        <input type="number" id="c" placeholder="celsius">
+        <button onclick="celsuisToFahrenheit()">calculate</button>
+        <p id = "fahrenheit"></p>
     </div>
 </body>
 <footer>
