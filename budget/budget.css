@@ -1,0 +1,46 @@
+#income {
+    width: 230px;
+    padding: 3px 3px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    background-color: #000000
+}
+.expense{
+    width: 130px;
+    padding: 3px 3px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    background-color: #000000
+    
+    
+}
+button{
+    width: 130px;
+    padding: 3px 3px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid darkorchid;
+    border-radius: 4px;
+    background-color: green
+}
+html {
+    background-color: #3b0952;
+    color: white;
+}   
+::placeholder {
+  color: green;
+  opacity: 1; /* Firefox */
+}
+input[type=number] {
+    
+    color: white;
+}
+
+#output {
+    text-align: right;
+}
+
