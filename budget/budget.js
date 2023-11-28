@@ -21,4 +21,19 @@ function GO() {
     console.log(exp4)
     console.log(exp5)
     console.log(exp6)
+    final = income-exp1-exp2-exp3-exp4-exp5-exp6
+    console.log(final)
+    if (final > 0) {
+        console.log("postive")
+        document.getElementById("output").innerHTML = `you have a postive net gain of ${final}`
+    } else {
+        console.log("negitive")
+        document.getElementById("output").innerHTML = `you have a negitive net gain of ${final}`
+    }
 }
+document.getElementById("click").addEventListener("click", function () {
+    if(final>7000){
+        document.getElementById("t5").style.display = "list-item"; // Change this line
+        document.getElementById("t5").style.listStyleType = "disc"; // Add this line to show the bullet point
+    }
+})
