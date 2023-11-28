@@ -24,7 +24,7 @@ function calculateSupply() {
 
 function calCircumfrence() {
     radius = document.getElementById("radius").value
-    circumfrence = 2*Math.pi *radius
+    circumfrence = 2*Math.PI *radius
     document.getElementById("circumfrence").innerHTML = `the circum ${circumfrence}`
     console.log(`the circum ${calCircumfrence}`)
 
