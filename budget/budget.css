@@ -44,6 +44,10 @@ input[type=number] {
     text-align: right;
 }
 
+ul {
+    display: block;
+}
+
 #t1 {
     display: none;
 }
@@ -59,4 +63,13 @@ input[type=number] {
 #t5 {
     display: none;
 }
+#t6 {
+    display: none;
+}
+#t7 {
+    display: none;
+}
 
+.visible {
+    display: block !important;
+}
