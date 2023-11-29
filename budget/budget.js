@@ -32,8 +32,51 @@ function GO() {
     }
 }
 document.getElementById("click").addEventListener("click", function () {
-    if(final>7000){
-        document.getElementById("t5").style.display = "list-item"; // Change this line
-        document.getElementById("t5").style.listStyleType = "disc"; // Add this line to show the bullet point
+    var ulElement = document.querySelector("#click + ul");
+
+    if (final < 0 && final > -1000) {
+        document.getElementById("click").innerHTML = "you're in the negative, but you're not far off from being in the positive, here are some tips to raise your net income";
+        document.getElementById("t1").style.display = "list-item";
+        document.getElementById("t1").style.listStyleType = "disc";
+        document.getElementById("t2").style.display = "list-item";
+        document.getElementById("t2").style.listStyleType = "disc";
+        document.getElementById("t3").style.display = "list-item";
+        document.getElementById("t3").style.listStyleType = "disc";
+    } else if (final > 7000) {
+        document.getElementById("click").innerHTML = "you're well in the positive, here are some tips to gain more";
+        document.getElementById("t5").style.display = "list-item";
+        document.getElementById("t5").style.listStyleType = "disc";
+        document.getElementById("t4").style.display = "list-item";
+        document.getElementById("t4").style.listStyleType = "disc";
+    } else if (final > 3000 && final < 7000) {
+        document.getElementById("click").innerHTML = "you're in a good range, here are some tips to manage your finances";
+        document.getElementById("t4").style.display = "list-item";
+        document.getElementById("t4").style.listStyleType = "disc";
+    } else if (final > 1000 && final < 2999) {
+        document.getElementById("click").innerHTML = "you're in the positive, but your net income is low, here are some tips to manage your finances";
+        document.getElementById("t1").style.display = "list-item";
+        document.getElementById("t1").style.listStyleType = "disc";
+    } else if (final > 1 && final < 999) {
+        document.getElementById("click").innerHTML = "you're in the positive, but you're barely scraping by, here are some tips to raise your net income";
+        document.getElementById("t1").style.display = "list-item";
+        document.getElementById("t1").style.listStyleType = "disc";
+        document.getElementById("t2").style.display = "list-item";
+        document.getElementById("t2").style.listStyleType = "disc";
+    } else {
+        document.getElementById("click").innerHTML = "you have a negative net gain, and need to gain net postive immediately here are some tips to improve your financial situation";
+        document.getElementById("t1").style.display = "list-item";
+        document.getElementById("t1").style.listStyleType = "disc";
+        document.getElementById("t2").style.display = "list-item";
+        document.getElementById("t2").style.listStyleType = "disc";
+        document.getElementById("t3").style.display = "list-item";
+        document.getElementById("t3").style.listStyleType = "disc";
+        document.getElementById("t6").style.display = "list-item";
+        document.getElementById("t6").style.listStyleType = "disc";
+        document.getElementById("t7").style.display = "list-item";
+        document.getElementById("t7").style.listStyleType = "disc";
+
     }
-})
+
+    // Always show the sibling <ul> element
+    ulElement.style.display = "block";
+});
