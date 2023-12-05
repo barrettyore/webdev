@@ -1,0 +1,56 @@
+html{
+    background-color: #4B0066;
+}
+header{
+    margin: 0px;
+    padding: 0px;
+    height: 10vh;
+    background-color: darkslategray;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+#title{
+    margin-top: 0; 
+            margin-left: 20px; 
+            color: white; 
+            font-family: 'Common Pixel', sans-serif;
+}
+.top{
+    background-color: red;
+    border-color: black;
+    border-width: 0.4vh;
+    margin-left: 1vw;
+}
+
+#suggest{
+    float: right;
+    margin-right: 3vw;
+}
+
+footer {
+    background-color: black;
+    margin-top: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-content {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom{
+    margin: 10vh;
+    color: white;
+    background-color: purple;
+}
