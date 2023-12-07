@@ -1,0 +1,100 @@
+html {
+    background-color: #4B0066;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    height: 10vh;
+    background-color: darkslategray;
+}
+
+#title {
+    margin-top: 0;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Common Pixel', sans-serif;
+}
+
+.top {
+    background-color: red;
+    border-color: white;
+    color: white;
+    border-width: 0.4vh;
+    margin-left: 1vw;
+}
+
+#suggest {
+    float: right;
+    margin-right: 3vw;
+}
+
+#rightSquare {
+    width: 30vw;
+    height: 80vh;
+    background-color: #5A0000; 
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    bottom: 10vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 80vh;
+    width: 30vw; 
+  }
+  
+  img {
+    margin-top: 30px;
+    max-width: 100%; 
+    max-height: 100%; 
+  }
+
+footer {
+    background-color: black;
+    margin-top: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom {
+    margin: 0 10vh;
+    color: white;
+    background-color: purple;
+}
+
+.info {
+    color: white;
+    font-style: italic;
+}
+
+#reveiw {
+    color: white;
+    margin-left: 20px; /* Add left margin to indent the paragraph */
+    max-width: calc(100% - 35vw); /* Limit the width based on the right panel width */
+    overflow: auto; /* Add overflow for long paragraphs */
+}
+
+#reveiw a {
+    color: red;
+}

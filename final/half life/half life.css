@@ -87,3 +87,14 @@ footer {
     color: white;
     font-style: italic;
 }
+
+#reveiw {
+    color: white;
+    margin-left: 20px; /* Add left margin to indent the paragraph */
+    max-width: calc(100% - 35vw); /* Limit the width based on the right panel width */
+    overflow: auto; /* Add overflow for long paragraphs */
+}
+
+#reveiw a {
+    color: red;
+}
