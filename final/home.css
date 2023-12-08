@@ -1,3 +1,21 @@
+header{
+    background-color: darkslategray;
+}
+
+#title {
+    margin-top: 0;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Common Pixel', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#slogan {
+    color: white;
+    margin-left: 5vh; 
+}
+
 html {
     background-color: #4B0066;
 }
@@ -6,7 +24,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 #body-grid {
@@ -63,12 +81,13 @@ body {
     background: linear-gradient(to top, rgb(33, 41, 41), rgb(255, 51, 0), red);
 }
 
-#title {
-    margin-top: 0;
-    margin-left: 20px;
-    color: white;
-    font-family: 'Common Pixel', sans-serif;
+@font-face {
+    font-family: 'Common Pixel';
+    src: url('fonts/COMMP___.woff') format('woff');
+    /* Add additional font formats here if needed */
 }
+
+
 
 .top {
     background-color: red;
