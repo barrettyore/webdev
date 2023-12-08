@@ -1,48 +1,76 @@
-html{
+html {
     background-color: #4B0066;
 }
-header{
-    margin: 0px;
-    padding: 0px;
-    height: 10vh;
-    background-color: darkslategray;
-}
-body{
+
+body {
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 80vh;
 }
-#body-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-    grid-template-rows: auto; /* Auto-sized rows */
-    gap: 20px; /* Gap between grid items */
-    /* padding: 20px; Padding for the entire grid */
 
+#body-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
 }
-#doom{
+
+#doom,
+#half-life {
+    position: relative;
+}
+
+#doom::before,
+#half-life::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#doom:hover::before,
+#half-life:hover::before {
+    opacity: 1;
+}
+
+#doom {
     grid-column: 1;
     grid-row: 1;
     position: relative;
     top: -50px;
     background: linear-gradient(to top, rgb(161, 2, 2), rgb(184, 121, 4));
-    
 }
-#half-life{
+
+#doom:hover {
+    background: linear-gradient(to top, rgb(161, 2, 2), rgb(184, 121, 4));
+}
+
+#half-life {
     grid-column: 2;
     grid-row: 1;
     position: relative;
     top: -50px;
-    background: linear-gradient(to top, rgb(33, 41, 41),rgb(255, 51, 0),red);
+    background: linear-gradient(to top, rgb(33, 41, 41), rgb(255, 51, 0), red);
 }
-#title{
-    margin-top: 0; 
-            margin-left: 20px; 
-            color: white; 
-            font-family: 'Common Pixel', sans-serif;
+
+#half-life:hover {
+    background: linear-gradient(to top, rgb(33, 41, 41), rgb(255, 51, 0), red);
 }
-.top{
+
+#title {
+    margin-top: 0;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Common Pixel', sans-serif;
+}
+
+.top {
     background-color: red;
     border-color: white;
     color: white;
@@ -50,7 +78,7 @@ body{
     margin-left: 1vw;
 }
 
-#suggest{
+#suggest {
     float: right;
     margin-right: 3vw;
 }
@@ -64,7 +92,6 @@ footer {
     align-items: center;
 }
 
-
 .footer-content {
     color: white;
     display: flex;
@@ -72,16 +99,14 @@ footer {
     align-items: center;
 }
 
-.bottom{
+.bottom {
     margin: 0 10vh;
     color: white;
     background-color: purple;
 }
 
-
-
 .flex-container {
-    transform: scale(0.5); 
+    transform: scale(0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,9 +121,9 @@ footer {
 }
 
 .image {
-    width: 80%; /* Adjust the width of the image as a percentage of the screen width */
-    max-width: 600px; /* Set a maximum width for the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%;
+    max-width: 600px;
+    height: auto;
     margin-bottom: 10px;
 }
 
