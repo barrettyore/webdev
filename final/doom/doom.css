@@ -98,3 +98,35 @@ footer {
 #reveiw a {
     color: red;
 }
+
+@keyframes changeColorIn {
+    0% {
+        color: red;
+    }
+    100% {
+        color: white;
+    }
+}
+
+@keyframes changeColorOut {
+    0% {
+        color: white;
+    }
+    100% {
+        color: red;
+    }
+}
+
+#reveiw a {
+    color: red;
+    
+}
+#reveiw a:hover {
+    animation: changeColorIn 0.3s ease-in-out forwards; 
+}
+
+#reveiw a:not(:hover) {
+    animation: changeColorOut 0.3s ease-in-out forwards;
+}
+
+
