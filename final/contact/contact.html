@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="contact.css">
-        <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
-        <style>
-            @import url('https://fonts.cdnfonts.com/css/common-pixel');
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/common-pixel');
+    </style>
+</head>
+<body>
     <header>
         <h1 id="title">RETRO REVEIWS</h1>
         <button class="top">1985-1995</button>
@@ -18,20 +19,19 @@
             <button class="top" id="suggest">suggest a game</button>
         </a>
     </header>
-    <body>
-        <div class="body-content">
-            <h1>EMAIL: example@ex.com</h1>
-            <h1>PHONE: 1-555-555-5555</h1>
-            <h1>ADDRESS: 123example st, example city UTAH, UNITED STATES</h1>
-            
-        </div>
-    </body>
+    <div class="body-content">
+        <h1>Email: <span id="email">example@ex.com</span> <button id="copyButton" onclick="copyToClipboard('example@ex.com')">Copy</button></h1>
+        <h1>Phone: 1-555-555-5555</h1>
+        <h1>Address: 123example st, example city UTAH, UNITED STATES</h1>
+    </div>
     <footer>
-        <script src="conctact.js"></script>
+        <script src="contact.js"></script>
         <div class="footer-content">
             <button class="bottom">about us</button>
             <button class="bottom">contact us</button>
             <button class="bottom">help</button>
         </div>
     </footer>
+</body>
+</html>
 </html>
