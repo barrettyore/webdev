@@ -5,28 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="suggest.css">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/common-pixel');
+    </style>
 </head>
 <body>
     <header>
-        <h1 id="title">RETRO REVEIWS</h1>
+        <h1 id="title">RETRO REVIEWS</h1>
     </header>
 
     <div class="wrapper">
-        <h2>IMPORTANT AT THE TIME WE ONLY ACCEPT PC GAMES THAT ARE AVAILABLE ON STEAM</h2>
-        <form id="form">
+        <h2>IMPORTANT: AT THE TIME, WE ONLY ACCEPT PC GAMES THAT ARE AVAILABLE ON STEAM</h2>
+        <div id="form">
             <h1>base game</h1>
             <input type="text" placeholder="GAMES NAME">
             <input type="text" placeholder="GAMES GENRE">
+            <h1>games community</h1>
+            <input type="text" placeholder="LINK TO GAMES WIKI PAGE">
+            <input type="text" placeholder="LINK TO GAMES STEAM PAGE">
+            
             <h1>games development</h1>
             <input type="text" placeholder="GAMES PUBLISHER (publisher at release date)">
             <input type="text" placeholder="GAMES CURRENT PUBLISHER (games publisher now)">
             <input type="text" placeholder="GAMES DEVELOPER">
             <input type="text" placeholder="GAMES RELEASE DATE MM/DD/YYYY">
-            <h1>games community</h1>
-            <input type="text" placeholder="LINK TO GAMES WIKI PAGE">
-            <input type="text" placeholder="LINK TO GAMES STEAM PAGE">
+        </div>
+        <div id="radio">
+            <input type="radio" value="AAA">
+            <label for="AAA">AAA</label>
+            <input type="radio" value="AA">
+            <label for="AA">AA</label>
+            <input type="radio" value="indie">
+            <label for="indie">indie</label>
+            <select id="port">
+                <option>PORTED TO PC</option>
+                <option>REMADE FOR PC</option>
+                <option>PC ORIGNAL</option>
+            </select>
             <button id="go" onclick="GO(event)">SUBMIT</button>
-        </form>
+        </div>
     </div>
 
     <footer>
@@ -36,6 +53,7 @@
                 <button class="bottom">contact us</button>
             </a>
             <button class="bottom">help</button>
+            <script src="suggest.js"></script>
         </div>
     </footer>
 </body>
