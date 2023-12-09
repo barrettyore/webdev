@@ -54,10 +54,9 @@ h2{
     color: white;
 }
 
-#form{
+#form {
     color: white;
 }
-
 
 #form input {
     width: 100%;
@@ -74,8 +73,76 @@ h2{
     color: #a080a0; 
 }
 
-#go{
-    background-color: #6b068d; 
-    border: 2px solid #38023b; 
-    color: white; 
+#go {
+    background-color: #6b068d;
+    border: 2px solid #38023b;
+    color: white;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition on transform property */
+}
+
+#go:hover {
+    animation: shake 0.1s infinite alternate; /* Apply the shake animation on hover, make it infinite and alternate */
+}
+
+
+
+
+#radio {
+    display: flex;
+    flex-direction: row; /* Change to row to display horizontally */
+    align-items: center;
+    margin: 0 5px;
+    /* Adjust other styles as needed */
+}
+
+#radio input[type="radio"] {
+    margin: 0 5px;
+    /* Adjust other styles as needed */
+}
+
+#radio label {
+    color: white;
+    margin-right: 15px; /* Adjust spacing between radio button and label if needed */
+}
+
+footer {
+    background-color: black;
+    margin-top: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-content {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom{
+    margin: 0 10vh;
+    color: white;
+    background-color: purple;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#port {
+    background-color: darkorchid;
+    color: white;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(+1px); /* Smaller movement */
+    }
 }
